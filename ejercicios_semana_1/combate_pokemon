@@ -1,0 +1,34 @@
+
+pokemon="pikachu"
+pokemon_life=100
+pokemon_attack1_damage = 10
+pokemon_attack2_damage = 12
+
+select = int(
+    input("Que Pokemon eliges: \n 1 - bulbasur \n 2 - charmander \n 3 - squirtle ")
+)
+
+if select == 1:
+    enemy = "bulbasur"
+    enemy_life = 100
+    enemy_damage = 10
+elif select == 2:
+    enemy = "charmander"
+    enemy_life = 80
+    enemy_damage = 8
+elif select == 3:
+    enemy = "squirtle"
+    enemy_life = 70
+    enemy_damage = 9
+while pokemon_life>0 and enemy_life>0:
+    print("{} tiene {} vida y {} tiene {} vida".format(pokemon,pokemon_life,enemy,enemy_life))
+    attack_select = int(input("con que quieres atacar : 1 - chispazo , 2 - bola voltio"))
+    if attack_select==1 :
+        enemy_life -= 10
+    elif attack_select==2:
+        enemy_life -=12
+    pokemon_life -= enemy_damage
+if pokemon_life > 0:
+    print("you win")
+else:
+    print("you lose")
