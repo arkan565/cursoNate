@@ -22,7 +22,7 @@ elif select == 3:
     enemy_damage = 9
 while pokemon_life>0 and enemy_life>0:
     print("{} tiene {} vida y {} tiene {} vida".format(pokemon,pokemon_life,enemy,enemy_life))
-    attack_select = int(input("con que quieres atacar : 1 - chispazo , 2 - bola voltio"))
+    attack_select = int(input("con que quieres atacar : \n1 - chispazo , \n2 - bola voltio"))
     if attack_select==1 :
         enemy_life -= 10
     elif attack_select==2:
