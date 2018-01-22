@@ -11,6 +11,7 @@ while i < len(lista_numeros):
         lista_numeros[i] = "buzz"
     i += 1
 
+lista_numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 , 20, 30, 55]
 
 multiplos_dos=[]
 multiplos_tres=[]
@@ -20,9 +21,9 @@ multiplos_siete=[]
 
 i = 0
 while i < len(lista_numeros):
-    if lista_numeros[i]%2==0:
+    if lista_numeros[i] % 2==0:
         multiplos_dos.append(lista_numeros[i])
-    if lista_numeros[i]%3 == 0:
+    if lista_numeros[i] % 3 == 0:
         multiplos_tres.append(lista_numeros[i])
     if lista_numeros[i]%5 == 0:
         multiplos_cinco.append(lista_numeros[i])
